@@ -9,4 +9,5 @@ resource "azurerm_storage_account" "demostg" {
     resource_group_name = azurerm_resource_group_demorg.name
     account_replication_type = "LRS"
     account_tier = "Standard"   
+    min_tls_version          = "TLS1_2"
 }
